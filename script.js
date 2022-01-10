@@ -64,9 +64,9 @@ function definirGramasEMililitros (minhaListaDeProdutos){
 
 // Função será responsável pela apresentação do pedido. Obs: usar console.log() invés return na string criada.
 function apresentacao() {
-  document.write(`Pedidos: ${pedido.nomes} <br>`)
-  document.write(`Preço total do seu pedido: R$ ${pedido.precoTotal},00 <br>`)
-  document.write(`O peso dos seus lanches é ${pedido.pesos.mililitros}, ${pedido.pesos.gramas}kgs`)
+  document.write(`Pedidos: ${pedido.nomes }  <br>`)
+  document.write(`Preço total do seu pedido: <span style="color:red">R$ ${pedido.precoTotal},00 </span><br>`)
+  document.write(`O peso dos seus lanches é ${pedido.pesos.mililitros}gramas, ${pedido.pesos.gramas}ml`)
 }
 
 // Função principal da nossa aplicação, será responsável por chamar as funções.
@@ -87,5 +87,3 @@ function principal(idDosProdutosComprados){
   apresentacao()
 }
 
-
-principal([1,2,3,4,5,7])
